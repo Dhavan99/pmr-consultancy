@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -312,27 +312,27 @@
             loader.style.display = 'none';
             container.style.display = 'block';
             
-            const featuresList = project.features.map(f => 
+            const featuresList = project.features.map(f => `
                 <li>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    
+                    ${f}
                 </li>
-            ).join('');
+            `).join('');
 
-            container.innerHTML = 
+            container.innerHTML = `
                 <div class="project-hero">
                     <div class="container">
                         <div class="breadcrumb">
-                            <a href="index.html">Home</a> > <a href="projects.html">Projects</a> > 
+                            <a href="index.html">Home</a> &gt; <a href="projects.html">Projects</a> &gt; ${project.title}
                         </div>
                         <div class="project-meta-tags">
-                            <span class="tag"></span>
-                            <span class="tag"></span>
+                            <span class="tag">${project.degree}</span>
+                            <span class="tag">${project.domain}</span>
                         </div>
-                        <h1 class="project-header-title"></h1>
-                        <p class="project-header-desc"></p>
+                        <h1 class="project-header-title">${project.title}</h1>
+                        <p class="project-header-desc">${project.description}</p>
                     </div>
                 </div>
                 
@@ -344,7 +344,7 @@
                                 System Architecture & Overview
                             </h2>
                             <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
-                                This project implements a cutting-edge architecture specifically designed to solve the challenges in . 
+                                This project implements a cutting-edge architecture specifically designed to solve the challenges in ${project.domain}. 
                                 It is meticulously documented to ensure easy understanding and smooth deployment. The codebase is structured 
                                 following industry best practices.
                             </p>
@@ -352,7 +352,7 @@
                                 [ System Architecture Diagram ]
                             </div>
                             <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
-                                Built with modern tools and frameworks, this  project is ready to be presented. It comes with a fully written report 
+                                Built with modern tools and frameworks, this ${project.degree} project is ready to be presented. It comes with a fully written report 
                                 explaining the flow of data, algorithms used, and the overall system design.
                             </p>
                             <div class="screenshot-placeholder">
@@ -400,7 +400,7 @@
                     <div class="sidebar">
                         <div class="sticky-sidebar">
                             <div class="purchase-card">
-                                <div class="price-display">₹</div>
+                                <div class="price-display">₹${project.price}</div>
                                 <p style="color: var(--clr-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-4);">One-time payment. Instant download.</p>
                                 
                                 <button class="btn btn-primary" id="page-add-cart-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem; margin-bottom: var(--space-4);">
@@ -409,7 +409,7 @@
                                 
                                 <h4 style="font-size: 1.1rem; margin-bottom: var(--space-2);">What's Included</h4>
                                 <ul class="purchase-includes">
-                                    
+                                    ${featuresList}
                                 </ul>
                                 
                                 <div style="margin-top: var(--space-4); display: flex; align-items: center; gap: 8px; color: #22c55e; font-size: 0.85rem; justify-content: center; font-weight: 500;">
@@ -420,7 +420,7 @@
                         </div>
                     </div>
                 </div>
-            ;
+            `;
 
             // Bind Add to Cart
             document.getElementById('page-add-cart-btn').addEventListener('click', () => {
