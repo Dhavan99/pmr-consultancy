@@ -48,36 +48,38 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <span class="hero-badge">Academic Excellence</span>
-                    <h1 class="hero-title">Premium Projects for <br/><span>BTech & MTech</span></h1>
-                    <p class="hero-subtitle">Elevate your academic journey with high-quality, fully documented projects. Source code, comprehensive reports, and presentations—ready for deployment.</p>
-                    <div class="hero-actions">
-                        <a href="projects.html" class="btn btn-primary">Browse Projects</a>
-                        <a href="about.html" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-bg-accent"></div>
-        </section>
+        <!-- Page Header -->
+        <div class="container" style="padding-top: var(--space-24); padding-bottom: var(--space-8); text-align: center;">
+            <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: var(--space-4);">All Projects</h1>
+            <p style="color: var(--clr-text-secondary); max-width: 600px; margin: 0 auto;">Browse our complete collection of premium BTech and MTech projects.</p>
+        </div>
 
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Featured Projects</h2>
-                    <p>Discover our most popular and impactful academic projects.</p>
+                    <h2>Available Projects</h2>
+                    <p>Filter by degree or domain to find the perfect project for your requirements.</p>
                 </div>
                 
-                <div class="projects-grid" id="projects-grid" data-limit="4">
-                    <!-- Products will be dynamically injected here via JS -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="BTech">BTech</button>
+                        <button class="filter-btn" data-filter="MTech">MTech</button>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-btn" data-domain="all">All Domains</button>
+                        <button class="filter-btn" data-domain="AI/ML">AI/ML</button>
+                        <button class="filter-btn" data-domain="IoT">IoT</button>
+                        <button class="filter-btn" data-domain="Web">Web Apps</button>
+                        <button class="filter-btn" data-domain="Blockchain">Blockchain</button>
+                        <button class="filter-btn" data-domain="Cybersecurity">Cybersec</button>
+                    </div>
                 </div>
 
-                <div style="text-align: center; margin-top: var(--space-12);">
-                    <a href="projects.html" class="btn btn-primary" style="padding: 0.75rem 2rem; font-size: 1rem;">View All Projects</a>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Products will be dynamically injected here via JS -->
                 </div>
             </div>
         </section>

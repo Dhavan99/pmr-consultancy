@@ -98,11 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!projectsGrid) return;
         projectsGrid.innerHTML = '';
         
-        const filteredProducts = products.filter(product => {
+        let filteredProducts = products.filter(product => {
             const matchDegree = currentDegreeFilter === 'all' || product.degree === currentDegreeFilter;
             const matchDomain = currentDomainFilter === 'all' || product.domain === currentDomainFilter;
             return matchDegree && matchDomain;
         });
+
+        // Limit the number of products if data-limit is specified
+        const limit = projectsGrid.getAttribute('data-limit');
+        if (limit && !isNaN(limit)) {
+            filteredProducts = filteredProducts.slice(0, parseInt(limit, 10));
+        }
 
         if (filteredProducts.length === 0) {
             projectsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--clr-text-secondary); padding: var(--space-8);">No projects found matching your criteria.</p>';
