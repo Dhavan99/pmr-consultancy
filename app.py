@@ -20,7 +20,7 @@ def index():
 # In production, load this from environment variables!
 app.config['SECRET_KEY'] = 'super-secret-secure-key-12345'
 # The user will replace this with their actual client ID
-app.config['GOOGLE_CLIENT_ID'] = 'YOUR_GOOGLE_CLIENT_ID'
+app.config['GOOGLE_CLIENT_ID'] = '198121120085-1m8i3v8iqr5btth5hbuprros2ff9dhuj.apps.googleusercontent.com'
 DB_FILE = 'database.db'
 
 def get_db_connection():
