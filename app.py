@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, abort
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
@@ -7,20 +7,49 @@ import sqlite3
 import os
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 # Enable CORS for all routes
 CORS(app)
 
+# Rate Limiter setup
+limiter = Limiter(
+    get_remote_address,
+    app=app,
+    default_limits=["200 per day", "50 per hour"],
+    storage_uri="memory://"
+)
+
+@app.before_request
+def block_sensitive_files():
+    # Block access to database, source code, and configuration files from the static server
+    sensitive_extensions = ('.db', '.py', '.env', '.log', '.sh', '.bat', '.ps1', 'requirements.txt')
+    if request.path.endswith(sensitive_extensions) or 'sqlite' in request.path.lower():
+        abort(403)
+        
+    if '/.' in request.path:
+        abort(403)
+
 @app.route('/')
 def index():
     return app.send_static_file('index.html')
 
+@app.after_request
+def add_security_headers(response):
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
+    # Adding permissive CSP because frontend uses inline scripts and styles
+    response.headers['Content-Security-Policy'] = "default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:;"
+    return response
 
 # In production, load this from environment variables!
-app.config['SECRET_KEY'] = 'super-secret-secure-key-12345'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'super-secret-secure-key-12345')
 # The user will replace this with their actual client ID
-app.config['GOOGLE_CLIENT_ID'] = '198121120085-1m8i3v8iqr5btth5hbuprros2ff9dhuj.apps.googleusercontent.com'
+app.config['GOOGLE_CLIENT_ID'] = os.environ.get('GOOGLE_CLIENT_ID', '198121120085-1m8i3v8iqr5btth5hbuprros2ff9dhuj.apps.googleusercontent.com')
 DB_FILE = 'database.db'
 
 def get_db_connection():
@@ -51,6 +80,7 @@ def token_required(f):
     return decorator
 
 @app.route('/api/register', methods=['POST'])
+@limiter.limit("5 per minute")
 def register():
     data = request.get_json()
     name = data.get('name')
@@ -83,6 +113,7 @@ def register():
     return jsonify({'message': 'User registered successfully!', 'token': token, 'name': name}), 201
 
 @app.route('/api/login', methods=['POST'])
+@limiter.limit("10 per minute")
 def login():
     data = request.get_json()
     email = data.get('email')
@@ -220,6 +251,7 @@ def checkout():
     }), 201
 
 @app.route('/api/contact', methods=['POST'])
+@limiter.limit("3 per hour")
 def handle_contact():
     data = request.json
     name = data.get('name')
