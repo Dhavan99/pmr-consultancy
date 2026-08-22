@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure Payment - PMR&Co Consultancy">
+    <title>Payment | PMR&Co Consultancy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: var(--clr-bg);">
+    <!-- Minimal Navbar -->
+    <header class="navbar" style="position: static; border-bottom: 1px solid var(--clr-border); background-color: var(--clr-surface);">
+        <div class="container nav-container" style="justify-content: center;">
+            <a href="index.html" class="logo">PMR&Co<span>.</span></a>
+        </div>
+    </header>
+
+    <main style="padding: var(--space-12) 0;">
+        <div class="container payment-grid">
+            <!-- Left Column: Billing & Payment -->
+            <div>
+                <form id="payment-form" onsubmit="handlePaymentSubmit(event)">
+                    
+                    <!-- Billing Details -->
+                    <div class="payment-section">
+                        <h2>Billing Details</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">Postal Code</label>
+                                <input type="text" id="zip" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="payment-section">
+                        <h2>Payment Method</h2>
+                        <div class="payment-methods">
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="card" checked>
+                                <div>
+                                    <strong>Credit / Debit Card</strong>
+                                    <p style="font-size: 0.85rem; color: var(--clr-text-secondary); margin-top: 2px;">Visa, MasterCard, RuPay</p>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="upi">
+                                <div>
+                                    <strong>UPI</strong>
+                                    <p style="font-size: 0.85rem; color: var(--clr-text-secondary); margin-top: 2px;">Google Pay, PhonePe, Paytm</p>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="netbanking">
+                                <div>
+                                    <strong>Net Banking</strong>
+                                    <p style="font-size: 0.85rem; color: var(--clr-text-secondary); margin-top: 2px;">All major banks supported</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Card Details Mockup (Visible by default) -->
+                        <div id="card-details" style="margin-top: var(--space-6);">
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry Date</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="password" id="cvv" placeholder="123" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: var(--space-4);">Pay Now</button>
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--clr-text-secondary); margin-top: var(--space-4);">
+                        Payments are securely processed with 256-bit encryption.
+                    </p>
+                </form>
+            </div>
+
+            <!-- Right Column: Order Summary -->
+            <div>
+                <div class="order-summary-card">
+                    <h2 style="font-size: 1.25rem; margin-bottom: var(--space-6);">Order Summary</h2>
+                    
+                    <div id="checkout-items" style="margin-bottom: var(--space-6); border-bottom: 1px solid var(--clr-border); padding-bottom: var(--space-4);">
+                        <!-- Items injected by JS -->
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="summary-subtotal">₹0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax (18% GST)</span>
+                        <span id="summary-tax">₹0</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="summary-total">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Load cart and calculate summary
+        document.addEventListener('DOMContentLoaded', () => {
+            const cart = JSON.parse(localStorage.getItem('pmr_cart')) || [];
+            
+            if(cart.length === 0) {
+                alert("Your cart is empty. Redirecting to home.");
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const itemsContainer = document.getElementById('checkout-items');
+            let subtotal = 0;
+
+            cart.forEach(item => {
+                subtotal += item.price;
+                itemsContainer.innerHTML += `
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <div style="max-width: 70%;">
+                            <h4 style="font-size: 0.95rem;">${item.title}</h4>
+                            <span style="font-size: 0.8rem; color: var(--clr-text-secondary);">${item.degree} | ${item.domain}</span>
+                        </div>
+                        <span style="font-weight: 600;">₹${item.price}</span>
+                    </div>
+                `;
+            });
+
+            const tax = Math.round(subtotal * 0.18);
+            const total = subtotal + tax;
+
+            document.getElementById('summary-subtotal').textContent = `₹${subtotal}`;
+            document.getElementById('summary-tax').textContent = `₹${tax}`;
+            document.getElementById('summary-total').textContent = `₹${total}`;
+        });
+
+        // Handle Payment Submit
+        async function handlePaymentSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            btn.innerHTML = `Processing Securely...`;
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            const cart = JSON.parse(localStorage.getItem('pmr_cart')) || [];
+            // In a real flow, we would get email from logged in user or a guest form.
+            // For now, if logged in, use their email, else prompt.
+            let userEmail = localStorage.getItem('pmr_user_email');
+            if(!userEmail) {
+                // If not logged in, we ask for an email for receipt (simulating guest flow from checkout.html)
+                userEmail = prompt("Please enter your email to receive the digital files:");
+                if(!userEmail) {
+                    alert("Email is required to process the order.");
+                    btn.innerHTML = `Pay Now`;
+                    btn.style.opacity = '1';
+                    btn.disabled = false;
+                    return;
+                }
+            }
+
+            const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+
+            const payload = {
+                email: userEmail,
+                payment_method: paymentMethod,
+                cart_items: cart
+            };
+
+            try {
+                const response = await fetch('http://localhost:5000/api/checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    // Clear cart on successful purchase
+                    localStorage.removeItem('pmr_cart');
+                    // Store order ID to show on success page
+                    localStorage.setItem('pmr_last_order_id', data.order_id);
+                    window.location.href = 'success.html';
+                } else {
+                    alert('Checkout failed: ' + data.message);
+                    btn.innerHTML = `Pay Now`;
+                    btn.style.opacity = '1';
+                    btn.disabled = false;
+                }
+            } catch (err) {
+                alert('Connection error. Is the backend running?');
+                btn.innerHTML = `Pay Now`;
+                btn.style.opacity = '1';
+                btn.disabled = false;
+            }
+        }
+
+        // Toggle card details visibility based on payment method
+        const radios = document.querySelectorAll('input[name="payment"]');
+        const cardDetails = document.getElementById('card-details');
+        
+        radios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                if(e.target.value === 'card') {
+                    cardDetails.style.display = 'block';
+                } else {
+                    cardDetails.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

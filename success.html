@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order Successful - PMR&Co Consultancy">
+    <title>Order Successful | PMR&Co Consultancy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar" style="position: static; border-bottom: 1px solid var(--clr-border);">
+        <div class="container nav-container" style="justify-content: center;">
+            <a href="index.html" class="logo">PMR&Co<span>.</span></a>
+        </div>
+    </header>
+
+    <main class="success-main">
+        <div class="success-card">
+            <div class="success-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            
+            <h1>Payment Successful!</h1>
+            <p>Thank you for your purchase. Your digital project files are ready for download.</p>
+            
+            <div class="order-details-box">
+                <div class="order-detail-row">
+                    <span>Order ID:</span>
+                    <span id="order-id">#PMR&CO-</span>
+                </div>
+                <div class="order-detail-row">
+                    <span>Date:</span>
+                    <span id="order-date"></span>
+                </div>
+                <div class="order-detail-row" style="margin-top: var(--space-4); padding-top: var(--space-2); border-top: 1px solid var(--clr-border);">
+                    <span>Status:</span>
+                    <span style="color: #059669;">Completed</span>
+                </div>
+            </div>
+
+            <button class="download-btn" onclick="alert('Downloading project files archive (.zip)...')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Project Files
+            </button>
+            
+            <a href="index.html" class="btn btn-secondary" style="width: 100%;">Return to Home</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Generate mock order ID and Date
+            const randomID = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('order-id').textContent += randomID;
+            
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('order-date').textContent = new Date().toLocaleDateString('en-US', options);
+        });
+    </script>
+</body>
+</html>

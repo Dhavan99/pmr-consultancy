@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create an account at PMR&Co Consultancy.">
+    <title>Sign Up | PMR&Co Consultancy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <!-- Minimal Navbar -->
+    <header class="navbar" style="position: static; border-bottom: 1px solid var(--clr-border);">
+        <div class="container nav-container" style="justify-content: center;">
+            <a href="index.html" class="logo">PMR&Co<span>.</span></a>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>Create an Account</h1>
+                <p>Join us to download premium academic projects.</p>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-bottom: var(--space-4);">
+                <div id="g_id_onload"
+                     data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                     data-context="signup"
+                     data-ux_mode="popup"
+                     data-callback="handleGoogleCallback"
+                     data-auto_prompt="false">
+                </div>
+                <div class="g_id_signin"
+                     data-type="standard"
+                     data-shape="rectangular"
+                     data-theme="outline"
+                     data-text="signup_with"
+                     data-size="large"
+                     data-logo_alignment="left">
+                </div>
+            </div>
+
+
+
+            <div class="auth-divider">OR</div>
+
+            <div id="error-message" class="auth-error">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span id="error-text">Registration failed.</span>
+            </div>
+
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="••••••••">
+                </div>
+                <div style="margin-bottom: var(--space-6); font-size: 0.85rem; color: var(--clr-text-secondary);">
+                    By signing up, you agree to our <a href="legal.html" style="color: var(--clr-accent);">Terms of Service</a> and <a href="legal.html" style="color: var(--clr-accent);">Privacy Policy</a>.
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+            </form>
+
+            <div class="auth-footer">
+                Already have an account? <a href="login.html">Log in</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        async function handleGoogleCallback(response) {
+            const errorDiv = document.getElementById('error-message');
+            const errorText = document.getElementById('error-text');
+            errorDiv.style.display = 'none';
+
+            try {
+                const res = await fetch('http://localhost:5000/api/google-login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ credential: response.credential })
+                });
+                
+                const data = await res.json();
+                
+                if (res.ok) {
+                    localStorage.setItem('pmr_token', data.token);
+                    localStorage.setItem('pmr_user', data.name);
+                    const payloadBase64 = data.token.split('.')[1];
+                    const decodedJwt = JSON.parse(atob(payloadBase64));
+                    localStorage.setItem('pmr_user_email', decodedJwt.email);
+                    
+                    window.location.href = 'index.html';
+                } else {
+                    errorText.textContent = data.message;
+                    errorDiv.style.display = 'flex';
+                }
+            } catch (err) {
+                errorText.textContent = 'Connection error. Is the server running?';
+                errorDiv.style.display = 'flex';
+            }
+        }
+
+        document.getElementById('signup-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const errorDiv = document.getElementById('error-message');
+            const errorText = document.getElementById('error-text');
+            
+            btn.innerHTML = 'Creating Account...';
+            btn.disabled = true;
+            errorDiv.style.display = 'none';
+
+            const payload = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:5000/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    localStorage.setItem('pmr_token', data.token);
+                    localStorage.setItem('pmr_user', data.name);
+                    localStorage.setItem('pmr_user_email', document.getElementById('email').value);
+                    window.location.href = 'index.html';
+                } else {
+                    errorText.textContent = data.message;
+                    errorDiv.style.display = 'flex';
+                    errorDiv.style.animation = 'none';
+                    errorDiv.offsetHeight; /* trigger reflow */
+                    errorDiv.style.animation = null;
+                    
+                    btn.innerHTML = 'Create Account';
+                    btn.disabled = false;
+                }
+            } catch (err) {
+                errorText.textContent = 'Connection error. Is the server running?';
+                errorDiv.style.display = 'flex';
+                btn.innerHTML = 'Create Account';
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

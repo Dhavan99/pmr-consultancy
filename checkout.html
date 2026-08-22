@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout - PMR&Co Consultancy">
+    <title>Checkout | PMR&Co Consultancy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: var(--clr-surface);">
+    <!-- Minimal Navbar for Checkout -->
+    <header class="navbar" style="position: static; border-bottom: 1px solid var(--clr-border);">
+        <div class="container nav-container" style="justify-content: center;">
+            <a href="index.html" class="logo">PMR&Co<span>.</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="checkout-main">
+        <div class="container checkout-container">
+            <div class="checkout-header">
+                <h1>Secure Checkout</h1>
+                <p>Choose how you would like to proceed with your purchase.</p>
+            </div>
+
+            <div class="checkout-grid">
+                <!-- Login Section -->
+                <div class="checkout-card login-card">
+                    <h2>Customer Login</h2>
+                    <p class="checkout-subtitle">Sign in to access your past purchases and save your details.</p>
+                    
+                    <form onsubmit="event.preventDefault(); window.location.href='payment.html';">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" required placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required placeholder="••••••••">
+                        </div>
+                        <div class="form-options" style="display: flex; justify-content: space-between; margin-bottom: var(--space-4); font-size: 0.85rem;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox"> Remember me
+                            </label>
+                            <a href="forgot-password.html" style="color: var(--clr-accent);">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In & Continue</button>
+                    </form>
+                    
+                    <div style="text-align: center; margin-top: var(--space-6); font-size: 0.9rem; color: var(--clr-text-secondary);">
+                        Don't have an account? <a href="signup.html" style="color: var(--clr-accent); font-weight: 600;">Sign up</a>
+                    </div>
+                </div>
+
+                <div class="checkout-divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- Guest Section -->
+                <div class="checkout-card guest-card">
+                    <h2>Continue as Guest</h2>
+                    <p class="checkout-subtitle">You don't need an account to checkout. We'll only use your email to send the project files.</p>
+                    
+                    <form onsubmit="event.preventDefault(); window.location.href='payment.html';">
+                        <div class="form-group">
+                            <label for="guest-email">Email Address for Delivery</label>
+                            <input type="email" id="guest-email" required placeholder="name@example.com">
+                        </div>
+                        <div style="margin-top: var(--space-8);">
+                            <button type="submit" class="btn btn-secondary" style="width: 100%;">Continue as Guest</button>
+                        </div>
+                    </form>
+                    
+                    <div class="secure-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <span>256-bit Secure Encryption</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer style="padding: var(--space-8) 0; text-align: center; border-top: 1px solid var(--clr-border); margin-top: var(--space-16);">
+        <p style="color: var(--clr-text-secondary); font-size: 0.85rem;">&copy; 2026 PMR&Co Consultancy. Secure Checkout.</p>
+    </footer>
+    <script>
+        // Auto-redirect if the user is already logged in
+        if (localStorage.getItem('pmr_token')) {
+            window.location.href = 'payment.html';
+        }
+    </script>
+</body>
+</html>
