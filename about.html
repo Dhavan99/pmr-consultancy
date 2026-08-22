@@ -9,6 +9,113 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(2, 132, 199, 0.9)), url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.05)"/></svg>');
+            padding: var(--space-24) 0 var(--space-16) 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .about-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+            color: #ffffff;
+        }
+        
+        .about-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-mission {
+            padding: var(--space-20) 0;
+            text-align: center;
+        }
+        
+        .about-mission h2 {
+            font-size: 2.25rem;
+            margin-bottom: var(--space-6);
+            color: var(--clr-text-primary);
+        }
+
+        .about-mission p {
+            font-size: 1.1rem;
+            color: var(--clr-text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+            padding: var(--space-16) 0;
+        }
+
+        .feature-card {
+            background: var(--clr-surface);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--clr-border);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--clr-accent);
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(2, 132, 199, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-6) auto;
+            color: var(--clr-accent);
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-4);
+            color: var(--clr-text-primary);
+        }
+
+        .feature-card p {
+            color: var(--clr-text-secondary);
+            line-height: 1.6;
+        }
+
+        .team-section {
+            background: var(--clr-bg-alt);
+            padding: var(--space-20) 0;
+            text-align: center;
+            border-top: 1px solid var(--clr-border);
+        }
+        
+        .team-section h2 {
+            font-size: 2.25rem;
+            margin-bottom: var(--space-4);
+        }
+        
+        .team-section p.subtitle {
+            color: var(--clr-text-secondary);
+            max-width: 600px;
+            margin: 0 auto var(--space-12) auto;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -18,11 +125,22 @@
             <nav class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="projects.html" class="nav-link">Projects</a>
-                <a href="about.html" class="nav-link">About</a>
+                <a href="about.html" class="nav-link active">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             <div class="nav-actions">
-                <a href="login.html" class="btn btn-primary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem; display: inline-flex; align-items: center; justify-content: center;">Log In</a>
+                <div id="user-menu-container" style="position: relative; display: none;">
+                    <button id="user-avatar-btn" style="background: var(--clr-accent); color: white; width: 40px; height: 40px; border-radius: 50%; border: none; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm);">
+                        U
+                    </button>
+                    <div id="user-dropdown" style="display: none; position: absolute; right: 0; top: 50px; background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-md); box-shadow: var(--shadow-md); min-width: 150px; flex-direction: column; overflow: hidden; z-index: 100;">
+                        <a href="profile.html" style="padding: var(--space-3) var(--space-4); text-decoration: none; color: var(--clr-text-primary); font-size: 0.9rem; border-bottom: 1px solid var(--clr-border);">My Profile</a>
+                        <button id="logout-btn" style="padding: var(--space-3) var(--space-4); text-align: left; background: none; border: none; color: #ef4444; font-size: 0.9rem; cursor: pointer; width: 100%;">Sign Out</button>
+                    </div>
+                </div>
+                
+                <a href="login.html" id="nav-login-btn" class="btn btn-primary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem; display: inline-flex; align-items: center; justify-content: center;">Log In</a>
+                
                 <button class="cart-btn" id="cart-btn" aria-label="Open cart" style="margin-left: var(--space-2);">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="9" cy="21" r="1"></circle>
@@ -37,28 +155,81 @@
 
     <!-- Main Content -->
     <main>
-        <section class="page-header">
+        <!-- Hero -->
+        <section class="about-hero">
             <div class="container">
-                <h1>About PMR&Co Consultancy</h1>
-                <p>Empowering students with industry-standard academic projects.</p>
+                <h1>About PMR&Co.</h1>
+                <p>Empowering engineering students with industry-standard academic projects, comprehensive documentation, and seamless deployment solutions.</p>
             </div>
         </section>
 
-        <section class="about-section">
+        <!-- Mission -->
+        <section class="about-mission">
             <div class="container">
-                <div class="about-content">
-                    <h2>Our Mission</h2>
-                    <p>At PMR&Co Consultancy, we understand the challenges students face when developing complex BTech and MTech projects. Our mission is to provide high-quality, fully documented, and ready-to-deploy projects that help students bridge the gap between academic requirements and industry standards.</p>
-                    
-                    <h2>Why Choose Us?</h2>
-                    <ul>
-                        <li><strong>Complete Packages:</strong> Every project comes with well-commented source code, a comprehensive project report, and a PowerPoint presentation.</li>
-                        <li><strong>Modern Technologies:</strong> We build projects using the latest frameworks in AI/ML, IoT, Web Development, and Blockchain.</li>
-                        <li><strong>Expert Guidance:</strong> Our projects are designed by industry professionals with years of experience.</li>
-                    </ul>
+                <h2>Our Mission</h2>
+                <p>At PMR&Co Consultancy, we understand the tremendous challenges students face when developing complex BTech and MTech projects from scratch. Our core mission is to bridge the gap between rigorous academic requirements and fast-paced industry standards by providing high-quality, fully documented, and ready-to-deploy projects.</p>
+            </div>
+        </section>
 
-                    <h2>Our Team</h2>
-                    <p>We are a group of passionate software engineers, data scientists, and hardware specialists dedicated to educational excellence. We take pride in delivering robust systems that not only help you secure top grades but also enhance your practical knowledge.</p>
+        <!-- Features/Why Choose Us Grid -->
+        <section class="container" style="padding-bottom: var(--space-20);">
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Complete Packages</h3>
+                    <p>Every project comes bundled with well-commented source code, a comprehensive project report, and an aesthetic PowerPoint presentation.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Modern Technologies</h3>
+                    <p>We build our solutions using the latest tech stacks in AI/ML, IoT, Web Development, and Blockchain to ensure relevance in today's market.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Expert Guidance</h3>
+                    <p>Our projects are carefully designed and reviewed by industry professionals and engineers with years of practical experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="team-section">
+            <div class="container">
+                <h2>Behind the Code</h2>
+                <p class="subtitle">We are a group of passionate software engineers, data scientists, and hardware specialists dedicated to educational excellence.</p>
+                
+                <div style="display: flex; justify-content: center; gap: var(--space-8); flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: var(--space-2); color: var(--clr-text-secondary); background: var(--clr-surface); padding: var(--space-4) var(--space-6); border-radius: 100px; border: 1px solid var(--clr-border);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                        <span>Committed to Quality</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: var(--space-2); color: var(--clr-text-secondary); background: var(--clr-surface); padding: var(--space-4) var(--space-6); border-radius: 100px; border: 1px solid var(--clr-border);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Guaranteed Results</span>
+                    </div>
                 </div>
             </div>
         </section>
