@@ -88,7 +88,7 @@
             errorDiv.style.display = 'none';
 
             try {
-                const res = await fetch('http://localhost:5000/api/google-login', {
+                const res = await fetch('/api/google-login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ credential: response.credential })
@@ -131,7 +131,7 @@
             };
 
             try {
-                const response = await fetch('http://localhost:5000/api/register', {
+                const response = await fetch('/api/register', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)
