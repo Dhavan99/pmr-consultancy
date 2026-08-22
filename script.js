@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let cart = JSON.parse(localStorage.getItem('pmr_cart')) || [];
     let currentDegreeFilter = 'all';
     let currentDomainFilter = 'all';
+    let currentSearchQuery = '';
 
     // DOM Elements
     const projectsGrid = document.getElementById('projects-grid');
     const degreeFilterBtns = document.querySelectorAll('[data-filter]');
     const domainFilterBtns = document.querySelectorAll('[data-domain]');
+    const searchInput = document.getElementById('project-search');
     
     // Cart Elements
     const cartBtn = document.getElementById('cart-btn');
@@ -93,6 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Search Logic
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            currentSearchQuery = e.target.value.toLowerCase().trim();
+            renderProjects();
+        });
+    }
+
     // Render Projects Function
     function renderProjects() {
         if (!projectsGrid) return;
@@ -101,7 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let filteredProducts = products.filter(product => {
             const matchDegree = currentDegreeFilter === 'all' || product.degree === currentDegreeFilter;
             const matchDomain = currentDomainFilter === 'all' || product.domain === currentDomainFilter;
-            return matchDegree && matchDomain;
+            
+            let matchSearch = true;
+            if (currentSearchQuery) {
+                const searchString = `${product.title} ${product.description} ${product.tech_stack || ''}`.toLowerCase();
+                matchSearch = searchString.includes(currentSearchQuery);
+            }
+
+            return matchDegree && matchDomain && matchSearch;
         });
 
         // Limit the number of products if data-limit is specified
