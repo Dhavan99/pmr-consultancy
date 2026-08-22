@@ -15,7 +15,7 @@
     <style>
         /* Specific styles for the project details page */
         .project-hero {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(2, 132, 199, 0.9)), url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.05)"/></svg>');
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 58, 138, 0.95)), url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.05)"/></svg>');
             padding: var(--space-24) 0 var(--space-12) 0;
             color: white;
         }
@@ -432,16 +432,8 @@
                             </h2>
                             <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
                                 ${project.architecture || `This project implements a cutting-edge architecture specifically designed to solve the challenges in ${project.domain}. It is meticulously documented to ensure easy understanding and smooth deployment. The codebase is structured following industry best practices.`}
-                            </p>
-                            <div class="mermaid" style="text-align: center; margin: var(--space-8) 0; padding: var(--space-4); background: #ffffff; border-radius: var(--radius-md); border: 1px solid var(--clr-border);">
-                                ${mermaidGraph}
-                            </div>
-                            <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
-                                Built with modern tools and frameworks, this ${project.degree} project is ready to be presented. It comes with a fully written report 
-                                explaining the flow of data, algorithms used, and the overall system design.
-                            </p>
-                            <div class="screenshot-placeholder">
-                                [ User Interface Mockup ]
+                            </p>                            <div class="mermaid" id="mermaid-container" style="text-align: center; margin: var(--space-8) 0; padding: var(--space-4); background: #ffffff; border-radius: var(--radius-md); border: 1px solid var(--clr-border);">
+                                <!-- Mermaid SVG will be injected here -->
                             </div>
                         </div>
 
@@ -481,10 +473,19 @@
                 </div>
             `;
 
-
-            // Initialize mermaid graphs
+            // Initialize mermaid graphs using async render
             if (typeof mermaid !== 'undefined') {
-                mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+                mermaid.initialize({ startOnLoad: false, theme: 'default' });
+                const renderMermaid = async () => {
+                    try {
+                        const container = document.getElementById('mermaid-container');
+                        const { svg } = await mermaid.render('mermaid-svg-generated', mermaidGraph);
+                        container.innerHTML = svg;
+                    } catch (err) {
+                        console.error('Mermaid render error:', err);
+                    }
+                };
+                renderMermaid();
             }
 
             // Bind Add to Cart
