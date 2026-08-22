@@ -321,6 +321,22 @@
                 </li>
             `).join('');
 
+            const techStackTags = project.tech_stack ? project.tech_stack.map(tech => `
+                <span class="tag" style="background: rgba(2, 132, 199, 0.1); color: var(--clr-accent); border: 1px solid var(--clr-accent);">${tech}</span>
+            `).join('') : '';
+
+            const faqsHtml = project.faqs ? project.faqs.map((faq, index) => `
+                <div class="accordion-item ${index === 0 ? 'active' : ''}">
+                    <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
+                        ${faq.q}
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-body">
+                        ${faq.a}
+                    </div>
+                </div>
+            `).join('') : '';
+
             container.innerHTML = `
                 <div class="project-hero">
                     <div class="container">
@@ -333,6 +349,10 @@
                         </div>
                         <h1 class="project-header-title">${project.title}</h1>
                         <p class="project-header-desc">${project.description}</p>
+                        
+                        <div style="margin-top: var(--space-6); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                            ${techStackTags}
+                        </div>
                     </div>
                 </div>
                 
@@ -344,12 +364,10 @@
                                 System Architecture & Overview
                             </h2>
                             <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
-                                This project implements a cutting-edge architecture specifically designed to solve the challenges in ${project.domain}. 
-                                It is meticulously documented to ensure easy understanding and smooth deployment. The codebase is structured 
-                                following industry best practices.
+                                ${project.architecture || `This project implements a cutting-edge architecture specifically designed to solve the challenges in ${project.domain}. It is meticulously documented to ensure easy understanding and smooth deployment. The codebase is structured following industry best practices.`}
                             </p>
                             <div class="screenshot-placeholder">
-                                [ System Architecture Diagram ]
+                                [ System Architecture Diagram for ${project.domain} ]
                             </div>
                             <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
                                 Built with modern tools and frameworks, this ${project.degree} project is ready to be presented. It comes with a fully written report 
@@ -366,33 +384,7 @@
                                 Frequently Asked Questions
                             </h2>
                             <div class="accordion" style="margin-top: var(--space-4);">
-                                <div class="accordion-item active">
-                                    <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
-                                        Is the source code fully customizable?
-                                        <span>+</span>
-                                    </button>
-                                    <div class="accordion-body">
-                                        Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have.
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
-                                        How do I run this on my machine?
-                                        <span>+</span>
-                                    </button>
-                                    <div class="accordion-body">
-                                        Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server.
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
-                                        Is the project report plagiarism-free?
-                                        <span>+</span>
-                                    </button>
-                                    <div class="accordion-body">
-                                        The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks.
-                                    </div>
-                                </div>
+                                ${faqsHtml}
                             </div>
                         </div>
                     </div>

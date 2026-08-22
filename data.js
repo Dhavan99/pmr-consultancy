@@ -12,7 +12,36 @@ const products = [
             "PPT Presentation",
             "Dataset Included"
         ],
-        "id": "p1"
+        "id": "p1",
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Flask",
+            "FastAPI",
+            "Pandas",
+            "PyTorch"
+        ]
     },
     {
         "title": "IoT Smart Home Controller",
@@ -27,7 +56,36 @@ const products = [
             "50-page Report",
             "PPT Presentation"
         ],
-        "id": "p2"
+        "id": "p2",
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Arduino",
+            "ESP32",
+            "MQTT",
+            "Python"
+        ]
     },
     {
         "id": "p3",
@@ -42,6 +100,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Express",
+            "MongoDB",
+            "Node.js",
+            "Next.js"
         ]
     },
     {
@@ -57,6 +144,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "PostgreSQL",
+            "Next.js",
+            "Django"
         ]
     },
     {
@@ -72,6 +188,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Truffle",
+            "Ethereum",
+            "Hardhat",
+            "IPFS"
         ]
     },
     {
@@ -88,6 +233,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Scikit-Learn",
+            "Flask",
+            "Pandas",
+            "FastAPI"
         ]
     },
     {
@@ -103,6 +277,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Hardhat",
+            "Web3.js",
+            "Solidity",
+            "Truffle"
         ]
     },
     {
@@ -118,6 +321,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "Ethereum",
+            "Truffle",
+            "Web3.js"
         ]
     },
     {
@@ -133,6 +365,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Wireshark",
+            "Bash",
+            "OpenSSL",
+            "Nmap"
         ]
     },
     {
@@ -148,6 +409,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "PostgreSQL",
+            "Django",
+            "Express",
+            "React"
         ]
     },
     {
@@ -163,6 +453,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Hardhat",
+            "Ethereum",
+            "Solidity",
+            "React"
         ]
     },
     {
@@ -179,6 +498,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "TensorFlow",
+            "Pandas",
+            "PyTorch",
+            "Scikit-Learn"
         ]
     },
     {
@@ -194,6 +542,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Truffle",
+            "Hardhat",
+            "Web3.js",
+            "React"
         ]
     },
     {
@@ -209,6 +586,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "OpenSSL",
+            "Bash",
+            "Linux"
         ]
     },
     {
@@ -224,6 +630,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Express",
+            "MongoDB",
+            "Django",
+            "Node.js"
         ]
     },
     {
@@ -240,6 +675,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Flask",
+            "FastAPI",
+            "Scikit-Learn",
+            "TensorFlow"
         ]
     },
     {
@@ -255,6 +719,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Hardhat",
+            "Web3.js",
+            "Ethereum",
+            "Solidity"
         ]
     },
     {
@@ -270,6 +763,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Node.js",
+            "MongoDB",
+            "PostgreSQL",
+            "Express"
         ]
     },
     {
@@ -285,6 +807,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "ESP32",
+            "C++",
+            "Raspberry Pi",
+            "Arduino"
         ]
     },
     {
@@ -300,6 +851,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "Truffle",
+            "React",
+            "Hardhat"
         ]
     },
     {
@@ -315,6 +895,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "OpenSSL",
+            "Linux",
+            "Suricata"
         ]
     },
     {
@@ -330,6 +939,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Next.js",
+            "MongoDB",
+            "Express"
         ]
     },
     {
@@ -345,6 +983,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Raspberry Pi",
+            "MQTT",
+            "Arduino",
+            "ESP32"
         ]
     },
     {
@@ -360,6 +1027,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Arduino",
+            "C++",
+            "Raspberry Pi",
+            "AWS IoT"
         ]
     },
     {
@@ -375,6 +1071,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Web3.js",
+            "Ethereum",
+            "React",
+            "Solidity"
         ]
     },
     {
@@ -390,6 +1115,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "MongoDB",
+            "Next.js",
+            "React",
+            "Express"
         ]
     },
     {
@@ -406,6 +1160,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "TensorFlow",
+            "Flask",
+            "PyTorch",
+            "Pandas"
         ]
     },
     {
@@ -422,6 +1205,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Scikit-Learn",
+            "Pandas",
+            "Python",
+            "Flask"
         ]
     },
     {
@@ -437,6 +1249,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Node.js",
+            "PostgreSQL",
+            "React",
+            "Next.js"
         ]
     },
     {
@@ -452,6 +1293,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Django",
+            "MongoDB",
+            "Express",
+            "Next.js"
         ]
     },
     {
@@ -468,6 +1338,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Flask",
+            "TensorFlow",
+            "FastAPI",
+            "Python"
         ]
     },
     {
@@ -483,6 +1382,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "IPFS",
+            "Hardhat",
+            "Web3.js"
         ]
     },
     {
@@ -498,6 +1426,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Linux",
+            "Wireshark",
+            "OpenSSL",
+            "Nmap"
         ]
     },
     {
@@ -513,6 +1470,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Raspberry Pi",
+            "Arduino",
+            "ESP32",
+            "Python"
         ]
     },
     {
@@ -528,6 +1514,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Express",
+            "Next.js",
+            "React",
+            "Node.js"
         ]
     },
     {
@@ -543,6 +1558,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "C++",
+            "MQTT",
+            "Raspberry Pi",
+            "ESP32"
         ]
     },
     {
@@ -558,6 +1602,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Bash",
+            "Suricata",
+            "Wireshark",
+            "Linux"
         ]
     },
     {
@@ -573,6 +1646,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Ethereum",
+            "Hardhat",
+            "Solidity",
+            "React"
         ]
     },
     {
@@ -588,6 +1690,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Ethereum",
+            "IPFS",
+            "Hardhat"
         ]
     },
     {
@@ -603,6 +1734,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "OpenSSL",
+            "Nmap",
+            "Bash",
+            "Suricata"
         ]
     },
     {
@@ -618,6 +1778,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Raspberry Pi",
+            "MQTT",
+            "Python",
+            "ESP32"
         ]
     },
     {
@@ -633,6 +1822,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "Hardhat",
+            "IPFS",
+            "React"
         ]
     },
     {
@@ -649,6 +1867,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Scikit-Learn",
+            "TensorFlow",
+            "FastAPI",
+            "PyTorch"
         ]
     },
     {
@@ -664,6 +1911,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "React",
+            "Ethereum",
+            "Truffle"
         ]
     },
     {
@@ -680,6 +1956,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "TensorFlow",
+            "FastAPI",
+            "PyTorch",
+            "Scikit-Learn"
         ]
     },
     {
@@ -695,6 +2000,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Web3.js",
+            "React",
+            "IPFS",
+            "Solidity"
         ]
     },
     {
@@ -710,6 +2044,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "OpenSSL",
+            "Linux",
+            "Suricata",
+            "Bash"
         ]
     },
     {
@@ -725,6 +2088,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "C++",
+            "AWS IoT",
+            "Python",
+            "MQTT"
         ]
     },
     {
@@ -740,6 +2132,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "IPFS",
+            "Ethereum",
+            "React"
         ]
     },
     {
@@ -755,6 +2176,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Hardhat",
+            "React",
+            "Solidity",
+            "Ethereum"
         ]
     },
     {
@@ -770,6 +2220,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Next.js",
+            "Django",
+            "PostgreSQL"
         ]
     },
     {
@@ -785,6 +2264,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Express",
+            "Next.js",
+            "Node.js"
         ]
     },
     {
@@ -800,6 +2308,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Truffle",
+            "Hardhat",
+            "IPFS"
         ]
     },
     {
@@ -815,6 +2352,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "AWS IoT",
+            "ESP32",
+            "MQTT",
+            "Arduino"
         ]
     },
     {
@@ -830,6 +2396,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Truffle",
+            "React",
+            "Solidity",
+            "IPFS"
         ]
     },
     {
@@ -846,6 +2441,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Flask",
+            "PyTorch",
+            "Pandas",
+            "Python"
         ]
     },
     {
@@ -861,6 +2485,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "Bash",
+            "Nmap",
+            "Wireshark"
         ]
     },
     {
@@ -876,6 +2529,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "MQTT",
+            "Python",
+            "ESP32",
+            "Raspberry Pi"
         ]
     },
     {
@@ -891,6 +2573,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "MQTT",
+            "Raspberry Pi",
+            "AWS IoT",
+            "Arduino"
         ]
     },
     {
@@ -906,6 +2617,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Bash",
+            "Wireshark",
+            "Suricata",
+            "Nmap"
         ]
     },
     {
@@ -921,6 +2661,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Node.js",
+            "React",
+            "PostgreSQL",
+            "Django"
         ]
     },
     {
@@ -936,6 +2705,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "React",
+            "IPFS",
+            "Truffle"
         ]
     },
     {
@@ -951,6 +2749,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Next.js",
+            "MongoDB",
+            "PostgreSQL",
+            "Express"
         ]
     },
     {
@@ -966,6 +2793,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Bash",
+            "Wireshark",
+            "OpenSSL",
+            "Suricata"
         ]
     },
     {
@@ -981,6 +2837,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Truffle",
+            "IPFS",
+            "React",
+            "Solidity"
         ]
     },
     {
@@ -996,6 +2881,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Nmap",
+            "Bash",
+            "Suricata",
+            "Python"
         ]
     },
     {
@@ -1012,6 +2926,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Pandas",
+            "Flask",
+            "PyTorch",
+            "TensorFlow"
         ]
     },
     {
@@ -1027,6 +2970,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "MongoDB",
+            "Node.js",
+            "Express",
+            "Next.js"
         ]
     },
     {
@@ -1042,6 +3014,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "Bash",
+            "Suricata",
+            "OpenSSL"
         ]
     },
     {
@@ -1058,6 +3059,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "TensorFlow",
+            "Pandas",
+            "Scikit-Learn"
         ]
     },
     {
@@ -1073,6 +3103,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Linux",
+            "Suricata",
+            "Python",
+            "Wireshark"
         ]
     },
     {
@@ -1088,6 +3147,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Web3.js",
+            "IPFS",
+            "React",
+            "Solidity"
         ]
     },
     {
@@ -1103,6 +3191,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js"
         ]
     },
     {
@@ -1118,6 +3235,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "Linux",
+            "Nmap",
+            "Wireshark"
         ]
     },
     {
@@ -1133,6 +3279,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "IPFS",
+            "Truffle",
+            "Hardhat",
+            "Web3.js"
         ]
     },
     {
@@ -1149,6 +3324,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "TensorFlow",
+            "Pandas",
+            "FastAPI",
+            "Scikit-Learn"
         ]
     },
     {
@@ -1164,6 +3368,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "C++",
+            "AWS IoT",
+            "MQTT"
         ]
     },
     {
@@ -1179,6 +3412,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "Arduino",
+            "MQTT",
+            "ESP32"
         ]
     },
     {
@@ -1195,6 +3457,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Pandas",
+            "TensorFlow",
+            "Scikit-Learn",
+            "Flask"
         ]
     },
     {
@@ -1210,6 +3501,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Next.js",
+            "Express",
+            "React",
+            "Node.js"
         ]
     },
     {
@@ -1225,6 +3545,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Node.js",
+            "Next.js",
+            "Express"
         ]
     },
     {
@@ -1240,6 +3589,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Bash",
+            "OpenSSL",
+            "Nmap",
+            "Suricata"
         ]
     },
     {
@@ -1256,6 +3634,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "PyTorch",
+            "Scikit-Learn",
+            "Flask",
+            "Pandas"
         ]
     },
     {
@@ -1271,6 +3678,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Bash",
+            "Python",
+            "Linux",
+            "Nmap"
         ]
     },
     {
@@ -1286,6 +3722,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Bash",
+            "Suricata",
+            "Nmap",
+            "Wireshark"
         ]
     },
     {
@@ -1301,6 +3766,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Linux",
+            "Wireshark",
+            "Nmap",
+            "Python"
         ]
     },
     {
@@ -1316,6 +3810,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "MongoDB",
+            "PostgreSQL",
+            "Node.js",
+            "Express"
         ]
     },
     {
@@ -1331,6 +3854,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "AWS IoT",
+            "C++",
+            "ESP32",
+            "Python"
         ]
     },
     {
@@ -1346,6 +3898,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Ethereum",
+            "Web3.js",
+            "IPFS",
+            "React"
         ]
     },
     {
@@ -1361,6 +3942,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "PostgreSQL",
+            "React",
+            "Express",
+            "Node.js"
         ]
     },
     {
@@ -1376,6 +3986,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Truffle",
+            "Solidity",
+            "IPFS",
+            "Web3.js"
         ]
     },
     {
@@ -1391,6 +4030,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Hardhat",
+            "Solidity",
+            "Ethereum",
+            "Truffle"
         ]
     },
     {
@@ -1406,6 +4074,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "Linux",
+            "Suricata",
+            "Wireshark"
         ]
     },
     {
@@ -1421,6 +4118,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Django",
+            "PostgreSQL",
+            "Node.js",
+            "React"
         ]
     },
     {
@@ -1436,6 +4162,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Django",
+            "Express",
+            "Node.js",
+            "React"
         ]
     },
     {
@@ -1451,6 +4206,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Linux",
+            "Bash",
+            "Wireshark",
+            "OpenSSL"
         ]
     },
     {
@@ -1466,6 +4250,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "AWS IoT",
+            "Python",
+            "Arduino",
+            "Raspberry Pi"
         ]
     },
     {
@@ -1481,6 +4294,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "AWS IoT",
+            "MQTT",
+            "C++",
+            "ESP32"
         ]
     },
     {
@@ -1496,6 +4338,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Ethereum",
+            "Web3.js",
+            "Solidity",
+            "IPFS"
         ]
     },
     {
@@ -1512,6 +4383,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Flask",
+            "TensorFlow",
+            "PyTorch",
+            "Pandas"
         ]
     },
     {
@@ -1527,6 +4427,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "IPFS",
+            "Web3.js",
+            "Ethereum",
+            "React"
         ]
     },
     {
@@ -1542,6 +4471,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Django",
+            "Express",
+            "MongoDB",
+            "Node.js"
         ]
     },
     {
@@ -1557,6 +4515,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Django",
+            "MongoDB",
+            "PostgreSQL",
+            "Next.js"
         ]
     },
     {
@@ -1572,6 +4559,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Linux",
+            "Bash",
+            "Suricata",
+            "OpenSSL"
         ]
     },
     {
@@ -1587,6 +4603,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Hardhat",
+            "Truffle",
+            "Ethereum",
+            "React"
         ]
     },
     {
@@ -1602,6 +4647,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Nmap",
+            "Linux",
+            "Suricata",
+            "Bash"
         ]
     },
     {
@@ -1617,6 +4691,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "PostgreSQL",
+            "Django",
+            "Node.js"
         ]
     },
     {
@@ -1632,6 +4735,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Hardhat",
+            "Solidity",
+            "Ethereum"
         ]
     },
     {
@@ -1647,6 +4779,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Node.js",
+            "Django",
+            "Express"
         ]
     },
     {
@@ -1662,6 +4823,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Django",
+            "Express",
+            "React",
+            "Node.js"
         ]
     },
     {
@@ -1677,6 +4867,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Arduino",
+            "ESP32",
+            "C++",
+            "Python"
         ]
     },
     {
@@ -1692,6 +4911,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Nmap",
+            "Bash",
+            "OpenSSL",
+            "Linux"
         ]
     },
     {
@@ -1708,6 +4956,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "PyTorch",
+            "TensorFlow",
+            "Python",
+            "Pandas"
         ]
     },
     {
@@ -1723,6 +5000,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Express",
+            "Next.js",
+            "Node.js",
+            "React"
         ]
     },
     {
@@ -1738,6 +5044,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Arduino",
+            "ESP32",
+            "Raspberry Pi",
+            "Python"
         ]
     },
     {
@@ -1753,6 +5088,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "OpenSSL",
+            "Python",
+            "Nmap",
+            "Bash"
         ]
     },
     {
@@ -1768,6 +5132,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "PostgreSQL",
+            "React",
+            "Django",
+            "Next.js"
         ]
     },
     {
@@ -1783,6 +5176,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Hardhat",
+            "IPFS",
+            "Ethereum",
+            "React"
         ]
     },
     {
@@ -1798,6 +5220,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "IPFS",
+            "Web3.js",
+            "Hardhat"
         ]
     },
     {
@@ -1813,6 +5264,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "MongoDB",
+            "Express",
+            "PostgreSQL",
+            "React"
         ]
     },
     {
@@ -1828,6 +5308,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Express",
+            "Django",
+            "Node.js",
+            "MongoDB"
         ]
     },
     {
@@ -1843,6 +5352,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Raspberry Pi",
+            "C++",
+            "Arduino",
+            "ESP32"
         ]
     },
     {
@@ -1858,6 +5396,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Node.js",
+            "Next.js",
+            "MongoDB",
+            "Django"
         ]
     },
     {
@@ -1874,6 +5441,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Flask",
+            "Python",
+            "TensorFlow",
+            "PyTorch"
         ]
     },
     {
@@ -1889,6 +5485,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "Linux",
+            "Nmap",
+            "Bash"
         ]
     },
     {
@@ -1904,6 +5529,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "Truffle",
+            "Ethereum",
+            "IPFS"
         ]
     },
     {
@@ -1919,6 +5573,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "ESP32",
+            "Raspberry Pi",
+            "C++",
+            "AWS IoT"
         ]
     },
     {
@@ -1935,6 +5618,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "FastAPI",
+            "Scikit-Learn",
+            "Flask",
+            "TensorFlow"
         ]
     },
     {
@@ -1950,6 +5662,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Web3.js",
+            "IPFS",
+            "Hardhat",
+            "Ethereum"
         ]
     },
     {
@@ -1965,6 +5706,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Suricata",
+            "Python",
+            "Wireshark",
+            "Nmap"
         ]
     },
     {
@@ -1980,6 +5750,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "Express",
+            "Node.js",
+            "MongoDB",
+            "Next.js"
         ]
     },
     {
@@ -1995,6 +5794,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Ethereum",
+            "Hardhat",
+            "Solidity",
+            "Truffle"
         ]
     },
     {
@@ -2010,6 +5838,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Bash",
+            "Python",
+            "OpenSSL",
+            "Wireshark"
         ]
     },
     {
@@ -2025,6 +5882,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Python",
+            "Suricata",
+            "Bash",
+            "Nmap"
         ]
     },
     {
@@ -2040,6 +5926,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Raspberry Pi",
+            "ESP32",
+            "Arduino",
+            "AWS IoT"
         ]
     },
     {
@@ -2055,6 +5970,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "IPFS",
+            "Web3.js",
+            "Ethereum"
         ]
     },
     {
@@ -2070,6 +6014,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Linux",
+            "Nmap",
+            "Bash",
+            "Suricata"
         ]
     },
     {
@@ -2086,6 +6059,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Pandas",
+            "Python",
+            "TensorFlow",
+            "PyTorch"
         ]
     },
     {
@@ -2102,6 +6104,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Flask",
+            "Pandas",
+            "Python",
+            "PyTorch"
         ]
     },
     {
@@ -2117,6 +6148,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Wireshark",
+            "Python",
+            "Nmap",
+            "Linux"
         ]
     },
     {
@@ -2132,6 +6192,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Web3.js",
+            "Truffle",
+            "Ethereum",
+            "Solidity"
         ]
     },
     {
@@ -2147,6 +6236,35 @@ const products = [
             "Cloud Backend",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The edge layer consists of connected microcontrollers and sensors that stream telemetry data via MQTT/HTTP protocols. The cloud layer ingests this real-time data into a time-series database, which is then served to a web-based dashboard for remote monitoring and control.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Do I need to buy specific hardware components?",
+                "a": "The project is designed to be hardware-agnostic where possible, but we provide a detailed Bill of Materials (BOM) listing the exact sensors and microcontrollers (like ESP32, Arduino, or Raspberry Pi) used in our reference implementation."
+            },
+            {
+                "q": "Can I simulate the hardware if I don't have the components?",
+                "a": "Yes, the project includes scripts to simulate sensor data payloads, allowing you to present the software and cloud dashboard even if the physical hardware is unavailable."
+            }
+        ],
+        "tech_stack": [
+            "Raspberry Pi",
+            "MQTT",
+            "ESP32",
+            "Python"
         ]
     },
     {
@@ -2162,6 +6280,35 @@ const products = [
             "Installation Guide",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This platform is built on a modern, decoupled architecture. The responsive frontend application communicates asynchronously with a robust RESTful/GraphQL API. The data layer utilizes a highly normalized relational database to guarantee ACID compliance and data integrity.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Is the database schema easily modifiable?",
+                "a": "Yes, the database schema is fully documented and uses standard migration tools. You can add new tables or modify existing relationships to accommodate additional features required by your university."
+            },
+            {
+                "q": "Is the frontend responsive?",
+                "a": "Yes, the UI is built with modern CSS practices (Flexbox/Grid) ensuring that the application looks great on desktops, tablets, and mobile devices."
+            }
+        ],
+        "tech_stack": [
+            "React",
+            "Express",
+            "PostgreSQL",
+            "Node.js"
         ]
     },
     {
@@ -2178,6 +6325,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "PyTorch",
+            "Flask",
+            "FastAPI",
+            "Pandas"
         ]
     },
     {
@@ -2193,6 +6369,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "Solidity",
+            "Truffle",
+            "Ethereum",
+            "IPFS"
         ]
     },
     {
@@ -2208,6 +6413,35 @@ const products = [
             "Implementation Code",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The system employs a defense-in-depth architecture. It incorporates multi-layered security protocols including end-to-end encryption, strict JWT-based session management, and real-time anomaly detection algorithms to identify and mitigate potential threats instantly.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "How can I demonstrate the security features during my presentation?",
+                "a": "The project comes with a set of testing scripts that simulate various attacks (like SQL injection or brute force). You can use these to show how the system successfully detects and blocks malicious activity."
+            },
+            {
+                "q": "Are the cryptographic algorithms standard?",
+                "a": "Yes, we implement industry-standard algorithms (like AES-256 for encryption and Argon2/PBKDF2 for hashing) rather than custom, unproven cryptographic methods."
+            }
+        ],
+        "tech_stack": [
+            "Suricata",
+            "OpenSSL",
+            "Linux",
+            "Python"
         ]
     },
     {
@@ -2223,6 +6457,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "IPFS",
+            "Ethereum",
+            "Truffle",
+            "Solidity"
         ]
     },
     {
@@ -2239,6 +6502,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "Pandas",
+            "FastAPI",
+            "PyTorch",
+            "Scikit-Learn"
         ]
     },
     {
@@ -2255,6 +6547,35 @@ const products = [
             "Dataset",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "This system leverages advanced Machine Learning models deployed via a scalable backend API. The data pipeline is optimized for high-throughput processing, ensuring low latency during inference. The frontend provides a seamless dashboard for visualizing model predictions in real-time.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Can I use my own dataset to retrain the model?",
+                "a": "Absolutely. The codebase includes data preprocessing scripts and a comprehensive training pipeline, allowing you to easily swap the default dataset with your own and fine-tune the model parameters."
+            },
+            {
+                "q": "What frameworks are used for the ML models?",
+                "a": "Depending on the specific module, we utilize industry-standard libraries such as TensorFlow, PyTorch, or Scikit-Learn to ensure high performance and academic credibility."
+            }
+        ],
+        "tech_stack": [
+            "FastAPI",
+            "PyTorch",
+            "Pandas",
+            "TensorFlow"
         ]
     },
     {
@@ -2270,6 +6591,35 @@ const products = [
             "Testnet Deployment Scripts",
             "Project Report",
             "PPT Presentation"
+        ],
+        "architecture": "The core business logic is entirely decentralized, implemented via secure Smart Contracts deployed on the blockchain. The DApp frontend interacts with the blockchain using Web3 providers, ensuring immutable state transitions, transparency, and trustless execution.",
+        "faqs": [
+            {
+                "q": "Is the source code fully customizable?",
+                "a": "Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have."
+            },
+            {
+                "q": "How do I run this on my machine?",
+                "a": "Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server."
+            },
+            {
+                "q": "Is the project report plagiarism-free?",
+                "a": "The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks."
+            },
+            {
+                "q": "Which testnet is this designed for?",
+                "a": "The deployment scripts are configured for standard testnets like Sepolia or Goerli. You can easily point the configuration to a local Ganache instance for offline testing."
+            },
+            {
+                "q": "Are the smart contracts audited?",
+                "a": "The smart contracts follow standard security practices and avoid common pitfalls like reentrancy. However, as this is an academic project, we encourage you to run automated analysis tools as part of your presentation."
+            }
+        ],
+        "tech_stack": [
+            "IPFS",
+            "Ethereum",
+            "Solidity",
+            "React"
         ]
     }
 ];
