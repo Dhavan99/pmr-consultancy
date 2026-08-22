@@ -179,6 +179,7 @@
             display: block;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -342,6 +343,67 @@
                 </div>
             `).join('') : '';
 
+
+            const domainMermaid = {
+                "AI/ML": `graph TD
+    A[Client UI] -->|REST API| B[Backend Server]
+    B --> C[Data Preprocessing Pipeline]
+    C --> D[Machine Learning Model]
+    D --> E[(Vector/NoSQL Database)]
+    D --> B
+    style A fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style B fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style C fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style D fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+    style E fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px`,
+                "Web": `graph TD
+    A[Web Browser / Mobile App] --> B[Load Balancer]
+    B --> C[Frontend Application]
+    B --> D[Backend API]
+    D --> E[(Relational Database)]
+    D --> F[(Redis Cache)]
+    style A fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style B fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style C fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style D fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+    style E fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style F fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px`,
+                "IoT": `graph TD
+    A[Hardware Sensors] -->|Telemetry| B[IoT Edge Gateway]
+    B -->|MQTT / HTTP| C[Cloud Ingestion Layer]
+    C --> D[(Time-Series Database)]
+    C --> E[Real-Time Dashboard]
+    style A fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style B fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style C fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+    style D fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style E fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px`,
+                "Blockchain": `graph TD
+    A[DApp Frontend] -->|Web3.js / Ethers.js| B[Smart Contracts]
+    B --> C[(Blockchain Ledger)]
+    A --> D[IPFS Decentralized Storage]
+    A --> E[User Wallet (MetaMask)]
+    style A fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+    style C fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style D fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style E fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px`,
+                "Cybersecurity": `graph TD
+    A[External Traffic] --> B[WAF / Firewall]
+    B --> C[Intrusion Detection System]
+    C --> D[Secure Application Backend]
+    D --> E[(Encrypted Storage)]
+    D --> F[Security Information & Event Management]
+    style A fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style B fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style C fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+    style D fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style E fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px
+    style F fill:#f1f5f9,stroke:#0ea5e9,stroke-width:2px`
+            };
+
+            const mermaidGraph = domainMermaid[project.domain] || domainMermaid["Web"];
+
             container.innerHTML = `
                 <div class="project-hero">
                     <div class="container">
@@ -371,8 +433,8 @@
                             <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
                                 ${project.architecture || `This project implements a cutting-edge architecture specifically designed to solve the challenges in ${project.domain}. It is meticulously documented to ensure easy understanding and smooth deployment. The codebase is structured following industry best practices.`}
                             </p>
-                            <div class="screenshot-placeholder">
-                                [ System Architecture Diagram for ${project.domain} ]
+                            <div class="mermaid" style="text-align: center; margin: var(--space-8) 0; padding: var(--space-4); background: #ffffff; border-radius: var(--radius-md); border: 1px solid var(--clr-border);">
+                                ${mermaidGraph}
                             </div>
                             <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
                                 Built with modern tools and frameworks, this ${project.degree} project is ready to be presented. It comes with a fully written report 
@@ -418,6 +480,12 @@
                     </div>
                 </div>
             `;
+
+
+            // Initialize mermaid graphs
+            if (typeof mermaid !== 'undefined') {
+                mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+            }
 
             // Bind Add to Cart
             document.getElementById('page-add-cart-btn').addEventListener('click', () => {
