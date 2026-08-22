@@ -278,11 +278,11 @@ def handle_contact():
 
     return jsonify({'status': 'success', 'message': 'Message received!'}), 200
 
+# Initialize DB if it doesn't exist (Runs when imported by gunicorn or directly)
+if not os.path.exists(DB_FILE):
+    import init_db
+    init_db.init_db()
+
 if __name__ == '__main__':
-    # Initialize DB if it doesn't exist
-    if not os.path.exists(DB_FILE):
-        import init_db
-        init_db.init_db()
-        
     print("Starting Secure API Server...")
     app.run(debug=True, port=5000)
