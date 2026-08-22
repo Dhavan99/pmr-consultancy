@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Details - PMR&Co Consultancy">
+    <title>Project Details | PMR&Co Consultancy</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles for the project details page */
+        .project-hero {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(2, 132, 199, 0.9)), url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.05)"/></svg>');
+            padding: var(--space-24) 0 var(--space-12) 0;
+            color: white;
+        }
+        
+        .breadcrumb {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: var(--space-6);
+        }
+        .breadcrumb a {
+            color: var(--clr-accent);
+            text-decoration: none;
+        }
+        
+        .project-meta-tags {
+            display: flex;
+            gap: var(--space-2);
+            margin-bottom: var(--space-6);
+        }
+        
+        .project-meta-tags .tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(4px);
+        }
+        
+        .project-header-title {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-4);
+        }
+        
+        .project-header-desc {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .project-body {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--space-12);
+            padding: var(--space-16) 0;
+        }
+
+        @media (max-width: 900px) {
+            .project-body {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .content-section {
+            background-color: var(--clr-surface);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: var(--space-8);
+            border: 1px solid var(--clr-border);
+        }
+        
+        .content-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-4);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+        
+        .content-section h2 svg {
+            color: var(--clr-accent);
+        }
+
+        .screenshot-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--clr-text-secondary);
+            font-weight: 600;
+            border: 1px dashed #cbd5e1;
+            margin-bottom: var(--space-4);
+        }
+
+        .sticky-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+        
+        .purchase-card {
+            background-color: var(--clr-surface);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--clr-accent);
+        }
+        
+        .price-display {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--clr-text-primary);
+            margin-bottom: var(--space-2);
+        }
+
+        .purchase-includes {
+            margin: var(--space-6) 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .purchase-includes li {
+            padding: var(--space-2) 0;
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--clr-text-secondary);
+            border-bottom: 1px solid var(--clr-border);
+        }
+        
+        .purchase-includes li:last-child {
+            border-bottom: none;
+        }
+
+        .accordion {
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        .accordion-item {
+            border-bottom: 1px solid var(--clr-border);
+        }
+        .accordion-item:last-child { border-bottom: none; }
+        .accordion-header {
+            width: 100%;
+            text-align: left;
+            padding: var(--space-4);
+            background: var(--clr-bg);
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        .accordion-body {
+            padding: var(--space-4);
+            display: none;
+            color: var(--clr-text-secondary);
+            line-height: 1.6;
+        }
+        .accordion-item.active .accordion-body {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PMR&Co<span>.</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <div id="user-menu-container" style="position: relative; display: none;">
+                    <button id="user-avatar-btn" style="background: var(--clr-accent); color: white; width: 40px; height: 40px; border-radius: 50%; border: none; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm);">
+                        U
+                    </button>
+                    <div id="user-dropdown" style="display: none; position: absolute; right: 0; top: 50px; background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-md); box-shadow: var(--shadow-md); min-width: 150px; flex-direction: column; overflow: hidden; z-index: 100;">
+                        <a href="profile.html" style="padding: var(--space-3) var(--space-4); text-decoration: none; color: var(--clr-text-primary); font-size: 0.9rem; border-bottom: 1px solid var(--clr-border);">My Profile</a>
+                        <button id="logout-btn" style="padding: var(--space-3) var(--space-4); text-align: left; background: none; border: none; color: #ef4444; font-size: 0.9rem; cursor: pointer; width: 100%;">Sign Out</button>
+                    </div>
+                </div>
+                
+                <a href="login.html" id="nav-login-btn" class="btn btn-primary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem; display: inline-flex; align-items: center; justify-content: center;">Log In</a>
+                
+                <button class="cart-btn" id="cart-btn" aria-label="Open cart" style="margin-left: var(--space-2);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="project-details-container" style="display: none;">
+        <!-- Hero injected by JS -->
+    </main>
+
+    <div id="loading-spinner" style="text-align: center; padding: var(--space-24) 0;">
+        <h2>Loading Project...</h2>
+    </div>
+
+    <div id="error-message" style="display: none; text-align: center; padding: var(--space-24) 0; color: #ef4444;">
+        <h2>Project not found.</h2>
+        <a href="projects.html" class="btn btn-primary" style="margin-top: var(--space-4);">Back to Projects</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">PMR&Co<span>.</span></a>
+                <p>Delivering academic excellence through premium BTech and MTech project solutions.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Explore</h3>
+                    <a href="projects.html">BTech Projects</a>
+                    <a href="projects.html">MTech Projects</a>
+                    <a href="about.html">About Us</a>
+                </div>
+                <div class="link-group">
+                    <h3>Legal</h3>
+                    <a href="legal.html">Terms of Service</a>
+                    <a href="legal.html">Privacy Policy</a>
+                    <a href="legal.html">Refund Policy</a>
+                </div>
+                <div class="link-group">
+                    <h3>Contact</h3>
+                    <a href="mailto:contact@pmrco.com">contact@pmrco.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 PMR&Co Consultancy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart-btn" id="close-cart-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">₹0</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container"></div>
+
+    <!-- Data -->
+    <script src="data.js"></script>
+    <!-- Logic -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('id');
+            const container = document.getElementById('project-details-container');
+            const loader = document.getElementById('loading-spinner');
+            const errorDiv = document.getElementById('error-message');
+
+            if (!projectId) {
+                loader.style.display = 'none';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            const project = products.find(p => p.id === projectId);
+            
+            if (!project) {
+                loader.style.display = 'none';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            // Render project details
+            loader.style.display = 'none';
+            container.style.display = 'block';
+            
+            const featuresList = project.features.map(f => 
+                <li>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    
+                </li>
+            ).join('');
+
+            container.innerHTML = 
+                <div class="project-hero">
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <a href="index.html">Home</a> > <a href="projects.html">Projects</a> > 
+                        </div>
+                        <div class="project-meta-tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                        </div>
+                        <h1 class="project-header-title"></h1>
+                        <p class="project-header-desc"></p>
+                    </div>
+                </div>
+                
+                <div class="container project-body">
+                    <div class="main-content">
+                        <div class="content-section">
+                            <h2>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                                System Architecture & Overview
+                            </h2>
+                            <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
+                                This project implements a cutting-edge architecture specifically designed to solve the challenges in . 
+                                It is meticulously documented to ensure easy understanding and smooth deployment. The codebase is structured 
+                                following industry best practices.
+                            </p>
+                            <div class="screenshot-placeholder">
+                                [ System Architecture Diagram ]
+                            </div>
+                            <p style="margin-bottom: var(--space-4); line-height: 1.7; color: var(--clr-text-secondary);">
+                                Built with modern tools and frameworks, this  project is ready to be presented. It comes with a fully written report 
+                                explaining the flow of data, algorithms used, and the overall system design.
+                            </p>
+                            <div class="screenshot-placeholder">
+                                [ User Interface Mockup ]
+                            </div>
+                        </div>
+
+                        <div class="content-section">
+                            <h2>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                Frequently Asked Questions
+                            </h2>
+                            <div class="accordion" style="margin-top: var(--space-4);">
+                                <div class="accordion-item active">
+                                    <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
+                                        Is the source code fully customizable?
+                                        <span>+</span>
+                                    </button>
+                                    <div class="accordion-body">
+                                        Yes! The source code is provided without any obfuscation. You can modify the UI, tweak the backend logic, and adapt the algorithms to fit any specific requirements your professors might have.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
+                                        How do I run this on my machine?
+                                        <span>+</span>
+                                    </button>
+                                    <div class="accordion-body">
+                                        Every project comes with a detailed README.md and an Installation Guide. It will walk you through setting up the environment, installing dependencies, and running the local server.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
+                                        Is the project report plagiarism-free?
+                                        <span>+</span>
+                                    </button>
+                                    <div class="accordion-body">
+                                        The project reports are drafted by professionals and serve as a comprehensive template. We recommend personalizing the introduction and literature review to ensure it passes your university's specific plagiarism checks.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar">
+                        <div class="sticky-sidebar">
+                            <div class="purchase-card">
+                                <div class="price-display">₹</div>
+                                <p style="color: var(--clr-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-4);">One-time payment. Instant download.</p>
+                                
+                                <button class="btn btn-primary" id="page-add-cart-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem; margin-bottom: var(--space-4);">
+                                    Add to Cart
+                                </button>
+                                
+                                <h4 style="font-size: 1.1rem; margin-bottom: var(--space-2);">What's Included</h4>
+                                <ul class="purchase-includes">
+                                    
+                                </ul>
+                                
+                                <div style="margin-top: var(--space-4); display: flex; align-items: center; gap: 8px; color: #22c55e; font-size: 0.85rem; justify-content: center; font-weight: 500;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                    Secure Checkout
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ;
+
+            // Bind Add to Cart
+            document.getElementById('page-add-cart-btn').addEventListener('click', () => {
+                // we call addToCart which is globally defined in script.js
+                if (typeof addToCart === 'function') {
+                    addToCart(project);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

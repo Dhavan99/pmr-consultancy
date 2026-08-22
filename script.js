@@ -131,10 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
 
-            // Open modal on click (except add to cart btn)
+            // Open project details page on click (except add to cart btn)
             card.addEventListener('click', (e) => {
                 if(!e.target.classList.contains('add-cart-btn')) {
-                    openModal(product);
+                    window.location.href = `project-details.html?id=${product.id}`;
                 }
             });
 
