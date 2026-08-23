@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Cart Logic
-    function addToCart(product) {
+    window.addToCart = function(product) {
         // Check if already in cart
         if (cart.find(item => item.id === product.id)) {
             alert("This project is already in your cart.");
